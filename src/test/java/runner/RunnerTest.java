@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src/test/java/features", glue = { "seleniumgluecode" }, plugin = {
 		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" }, monochrome = true)
 
-public class testrunner {
+public class RunnerTest {
 	@AfterClass
 	public static void writeExtentReport() {
 		Reporter.loadXMLConfig(new File("config/report.xml"));
